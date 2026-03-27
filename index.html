@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amin srraj Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h2 class="logo">amin srraj</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#quote-section">Quote</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-container">
+        
+        <!-- Interactive Greeting -->
+        <div class="greeting-box" style="margin-bottom: 2rem;">
+          <input type="text" id="visitorName" placeholder="Enter your name" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 1rem;" />
+          <button id="greetBtn" style="padding: 10px 20px; border: none; border-radius: 5px; background-color: var(--primary-color, #007bff); color: white; cursor: pointer; font-size: 1rem; margin-left: 10px;">Say Hello!</button>
+          <h3 id="greetingMessage" style="margin-top: 15px; color: var(--text-color, #333); min-height: 24px;"></h3>
+        </div>
+
+        <h1>Hello, I'm <span class="highlight">Amin Srraj</span></h1>
+        <p class="tagline">
+          SWE Student | Aspiring Software Developer
+        </p>
+        <p class="about-text">
+          I enjoy building responsive web applications and solving real-world
+          problems through clean and efficient code. I am constantly learning
+          and improving my technical skills to grow as a developer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      
+      <h2>My Projects</h2>
+      <div class="project-card">
+        <img src="assets/images/project1.png" alt="Dice Roller App" />
+        <h3>Dice Roller App</h3>
+        <p>
+          A simple web app that simulates rolling a dice and generates a random
+          number between 1 and 6 using flutter.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/images/project2.png" alt="Database Website Project" />
+        <h3>Online Database Management System</h3>
+        <p>
+          A web application connected to an online database that allows users to
+          view and update data directly from the website.
+        </p>
+      </div>
+    </section>
+
+    <!-- Random Quote Section (API Request) -->
+    <section id="quote-section">
+      <div class="quote-container">
+        <h2 style="margin-bottom: 20px;">Random Inspiration</h2>
+        <div id="quoteContent" style="min-height: 80px;">
+          <p id="quoteText" style="font-size: 1.3rem; font-style: italic; margin-bottom: 10px; color: var(--text-color, #333);">Loading quote...</p>
+          <p id="quoteAuthor" style="font-weight: bold; color: var(--primary-color, #007bff);"></p>
+        </div>
+        <button id="newQuoteBtn" style="margin-top: 20px; padding: 10px 20px; border: none; border-radius: 5px; background-color: var(--primary-color, #007bff); color: white; cursor: pointer; font-size: 1rem; transition: background-color 0.3s ease;">Get Another Quote</button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="input-group">
+            <input type="text" id="contactName" placeholder="Your Name" required />
+            <span class="error-message" id="nameError"></span>
+          </div>
+          <div class="input-group">
+            <input type="email" id="contactEmail" placeholder="Your Email" required />
+            <span class="error-message" id="emailError"></span>
+          </div>
+          <div class="input-group">
+            <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+          <button type="submit">Send Message</button>
+          <p id="formSuccessMessage" style="color: #28a745; display: none; margin-top: 10px; font-weight: bold;">Message sent successfully!</p>
+        </form>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
