@@ -18,7 +18,7 @@ To view this project locally:
    - Alternatively, you can use the **VS Code Live Server** extension by right-clicking on `index.html` and choosing "Open with Live Server" to test dynamic file loading over standard HTTP/s network simulation instead of `file:///`.
 
 ## AI Usage Summary
-During the development and enhancement phases of this portfolio, an AI coding assistant (e.g. Google Gemini / Copilot / ChatGPT) was utilized to provide suggestions, debug JavaScript logic, and recommend UX structure layouts, such as ensuring full-width and full-height consistency (`100vh`) using semantic structure.
+During the development and enhancement phases of this portfolio, an AI coding assistant  Google Gemini was utilized to provide suggestions, debug JavaScript logic, and recommend UX structure layouts, such as ensuring full-width and full-height consistency (`100vh`) using semantic structure.
 
 The AI assistant securely supported writing the `fetch()` API calls, creating standard error messages for missing networks, and scaffolding the regex variables used in form validation checks.
 
