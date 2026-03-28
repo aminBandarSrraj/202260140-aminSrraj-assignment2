@@ -1,0 +1,12 @@
+{
+  "name": "202260140-aminsrraj-assignment2",
+  "version": "1.0.0",
+  "description": "Amin Srraj Portfolio",
+  "scripts": {
+    "start": "npx live-server",
+    "dev": "npx live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
